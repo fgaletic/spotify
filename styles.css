@@ -1,0 +1,162 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+   } 
+   
+   body, html {
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+.logo {
+    padding-top:15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    float: right;
+
+    font-family: Roboto;
+    color: white;
+}
+
+.menu-list {
+    display: flex;
+    justify-content:space-between;
+    list-style-type: none;
+    gap: 2vw;
+    padding-right: 15px;
+}
+
+.menu-list a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: #dddddd00;
+    color: #1DB954;
+  }
+
+@media screen and (max-width: 300px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navigation {
+      float: none;
+    }
+  }
+
+  .hero-section {
+    background-color: rgb(29, 117, 222);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-text {
+    padding-left: 240px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 12vh;
+  }
+
+.hero-buttons-1 {
+    background-color: black;
+    border-color: black;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    margin-right: 1vw;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    border-style: solid;
+}
+
+.hero-buttons-2 {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    margin-right: 1vw;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    border-style: solid;
+}
+
+.hero-buttons-1:hover {
+    transform: scale(1.1)
+  }
+
+  .hero-buttons-2:hover {
+    transform: scale(1.1)
+  }
+
+.disclaimer {
+    font-size: smaller;
+}
+
+#terms {
+    color: white;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 4vh
+}
+
+.icon-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 0 240px 0 240px;
+}
+
+.icons {
+    margin-bottom: 50px;
+}
+
+.icons:hover {
+  transform: scale(1.1)
+}
